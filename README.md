@@ -8,3 +8,5 @@ FPGA resources
 
 <img width="368" height="213" alt="se_res" src="https://github.com/user-attachments/assets/a4d26db1-f1bd-488d-87dc-f688016e6e40" />
 
+video on YouTube: https://www.youtube.com/watch?v=lXBCwr5WWws
+
