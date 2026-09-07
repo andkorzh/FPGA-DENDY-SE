@@ -32141,18 +32141,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="U1" gate="G$1" pin="IO20"/>
 </segment>
 </net>
-<net name="DENDY" class="0">
-<segment>
-<pinref part="J2" gate="A" pin="1"/>
-<wire x1="-111.76" y1="68.58" x2="-129.54" y2="68.58" width="0.1524" layer="91"/>
-<label x="-127" y="68.58" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="-45.72" y1="22.86" x2="-60.96" y2="22.86" width="0.1524" layer="91"/>
-<label x="-58.42" y="22.86" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="IO3"/>
-</segment>
-</net>
 <net name="DATA0" class="0">
 <segment>
 <wire x1="-60.96" y1="12.7" x2="-45.72" y2="12.7" width="0.1524" layer="91"/>
@@ -33481,24 +33469,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="-50.8" y1="-109.22" x2="-55.88" y2="-109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PAL" class="0">
-<segment>
-<pinref part="J1" gate="A" pin="1"/>
-<wire x1="-111.76" y1="78.74" x2="-129.54" y2="78.74" width="0.1524" layer="91"/>
-<label x="-127" y="78.74" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="-45.72" y1="27.94" x2="-60.96" y2="27.94" width="0.1524" layer="91"/>
-<label x="-58.42" y="27.94" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="IO1"/>
-</segment>
-<segment>
-<wire x1="-17.78" y1="-99.06" x2="-50.8" y2="-99.06" width="0.1524" layer="91"/>
-<label x="-48.26" y="-99.06" size="1.778" layer="95"/>
-<pinref part="U16" gate="G$1" pin="S"/>
-<wire x1="-17.78" y1="-99.06" x2="-17.78" y2="-106.68" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="/IN0" class="0">
 <segment>
 <wire x1="-45.72" y1="25.4" x2="-60.96" y2="25.4" width="0.1524" layer="91"/>
@@ -34164,6 +34134,36 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="15.24" y1="-132.08" x2="30.48" y2="-132.08" width="0.1524" layer="91"/>
 <label x="16.002" y="-131.826" size="1.778" layer="95"/>
 <pinref part="R25" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="/PAL" class="0">
+<segment>
+<pinref part="J1" gate="A" pin="1"/>
+<wire x1="-111.76" y1="78.74" x2="-129.54" y2="78.74" width="0.1524" layer="91"/>
+<label x="-127" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-45.72" y1="27.94" x2="-60.96" y2="27.94" width="0.1524" layer="91"/>
+<label x="-58.42" y="27.94" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="IO1"/>
+</segment>
+<segment>
+<wire x1="-17.78" y1="-99.06" x2="-50.8" y2="-99.06" width="0.1524" layer="91"/>
+<label x="-48.26" y="-99.06" size="1.778" layer="95"/>
+<pinref part="U16" gate="G$1" pin="S"/>
+<wire x1="-17.78" y1="-99.06" x2="-17.78" y2="-106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="/DENDY" class="0">
+<segment>
+<pinref part="J2" gate="A" pin="1"/>
+<wire x1="-111.76" y1="68.58" x2="-129.54" y2="68.58" width="0.1524" layer="91"/>
+<label x="-127" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-45.72" y1="22.86" x2="-60.96" y2="22.86" width="0.1524" layer="91"/>
+<label x="-58.42" y="22.86" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="IO3"/>
 </segment>
 </net>
 </nets>
