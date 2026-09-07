@@ -30000,7 +30000,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2k"/>
 <part name="C5" library="rcl_my" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.01uF"/>
 <part name="GND48" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2k"/>
+<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2k2"/>
 <part name="GND76" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND49" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="820"/>
@@ -32080,11 +32080,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </net>
 <net name="/PRD" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="DIR"/>
-<wire x1="-205.74" y1="129.54" x2="-220.98" y2="129.54" width="0.1524" layer="91"/>
-<label x="-220.98" y="129.54" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="-350.52" y1="0" x2="-342.9" y2="0" width="0.1524" layer="91"/>
 <pinref part="CN1" gate="G$1" pin="/PRD"/>
 <label x="-347.98" y="0" size="1.778" layer="95"/>
@@ -33894,14 +33889,20 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="U1" gate="G$1" pin="IO44"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="/PRD_FPGA" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="IO31"/>
 <wire x1="66.04" y1="-27.94" x2="45.72" y2="-27.94" width="0.1524" layer="91"/>
+<label x="48.26" y="-27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="DIR"/>
+<wire x1="-205.74" y1="129.54" x2="-228.6" y2="129.54" width="0.1524" layer="91"/>
+<label x="-226.06" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="/PWR_FPGA" class="0">
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="IO29"/>
