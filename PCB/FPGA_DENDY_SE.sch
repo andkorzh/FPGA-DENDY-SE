@@ -361,9 +361,9 @@
 <pin name="A5" x="-17.78" y="-7.62" length="middle"/>
 <pin name="A6" x="-17.78" y="-10.16" length="middle"/>
 <pin name="A7" x="-17.78" y="-12.7" length="middle"/>
-<pin name="GND@2" x="-17.78" y="-17.78" length="middle" direction="pas"/>
-<pin name="GND@3" x="-17.78" y="-20.32" length="middle" direction="pas"/>
-<pin name="GND@1" x="-17.78" y="-22.86" length="middle" direction="pas"/>
+<pin name="GND@2" x="-17.78" y="-17.78" length="middle" direction="pwr"/>
+<pin name="GND@3" x="-17.78" y="-20.32" length="middle" direction="pwr"/>
+<pin name="GND@1" x="-17.78" y="-22.86" length="middle" direction="pwr"/>
 <pin name="B0" x="17.78" y="22.86" length="middle" rot="R180"/>
 <pin name="B1" x="17.78" y="20.32" length="middle" rot="R180"/>
 <pin name="B2" x="17.78" y="17.78" length="middle" rot="R180"/>
@@ -21127,13 +21127,13 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <text x="-10.163" y="8.892659375" size="1.77853125" layer="95">&gt;NAME</text>
 <text x="-10.1744" y="-7.63081875" size="1.78051875" layer="96">&gt;VALUE</text>
 <pin name="DCLK" x="12.7" y="0" length="short" direction="in" rot="R180"/>
-<pin name="VCC@2" x="12.7" y="2.54" length="short" direction="in" rot="R180"/>
+<pin name="VCC@2" x="12.7" y="2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="ASDI" x="12.7" y="-2.54" length="short" direction="in" rot="R180"/>
-<pin name="VCC@3" x="12.7" y="5.08" length="short" direction="out" rot="R180"/>
+<pin name="VCC@3" x="12.7" y="5.08" length="short" direction="pwr" rot="R180"/>
 <pin name="GND" x="-12.7" y="-2.54" length="short" direction="pwr"/>
 <pin name="VCC@1" x="-12.7" y="0" length="short" direction="pwr"/>
-<pin name="/CS" x="-12.7" y="5.08" length="short" direction="pwr"/>
-<pin name="DATA" x="-12.7" y="2.54" length="short" direction="pwr"/>
+<pin name="/CS" x="-12.7" y="5.08" length="short" direction="in"/>
+<pin name="DATA" x="-12.7" y="2.54" length="short" direction="out"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -21311,39 +21311,39 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pin name="IO6" x="-45.72" y="-17.78" length="middle"/>
 <pin name="IO7" x="-45.72" y="-20.32" length="middle"/>
 <pin name="IO8" x="-45.72" y="-22.86" length="middle"/>
-<pin name="VCC_IO1@1" x="-45.72" y="-12.7" length="middle"/>
-<pin name="GND@1" x="-45.72" y="-15.24" length="middle"/>
-<pin name="CLK0" x="-45.72" y="7.62" length="middle"/>
-<pin name="CLK2" x="45.72" y="7.62" length="middle" rot="R180"/>
+<pin name="VCC_IO1@1" x="-45.72" y="-12.7" length="middle" direction="pwr"/>
+<pin name="GND@1" x="-45.72" y="-15.24" length="middle" direction="pwr"/>
+<pin name="CLK0" x="-45.72" y="7.62" length="middle" direction="in"/>
+<pin name="CLK2" x="45.72" y="7.62" length="middle" direction="in" rot="R180"/>
 <pin name="IO9" x="-45.72" y="-25.4" length="middle"/>
 <pin name="IO10" x="-45.72" y="-27.94" length="middle"/>
 <pin name="IO11" x="-45.72" y="-30.48" length="middle"/>
 <pin name="IO12" x="-30.48" y="-45.72" length="middle" rot="R90"/>
-<pin name="TMS" x="45.72" y="0" length="middle" rot="R180"/>
-<pin name="TDI" x="45.72" y="10.16" length="middle" rot="R180"/>
-<pin name="TCK" x="45.72" y="-2.54" length="middle" rot="R180"/>
-<pin name="TDO" x="45.72" y="2.54" length="middle" rot="R180"/>
+<pin name="TMS" x="45.72" y="0" length="middle" direction="in" rot="R180"/>
+<pin name="TDI" x="45.72" y="10.16" length="middle" direction="in" rot="R180"/>
+<pin name="TCK" x="45.72" y="-2.54" length="middle" direction="in" rot="R180"/>
+<pin name="TDO" x="45.72" y="2.54" length="middle" direction="out" rot="R180"/>
 <pin name="IO13" x="-27.94" y="-45.72" length="middle" rot="R90"/>
 <pin name="IO14" x="-25.4" y="-45.72" length="middle" rot="R90"/>
 <pin name="IO15" x="-22.86" y="-45.72" length="middle" rot="R90"/>
 <pin name="IO19" x="-2.54" y="-45.72" length="middle" rot="R90"/>
 <pin name="IO20" x="0" y="-45.72" length="middle" rot="R90"/>
-<pin name="VCC_IO4@1" x="-17.78" y="-45.72" length="middle" rot="R90"/>
-<pin name="GND@2" x="-20.32" y="-45.72" length="middle" rot="R90"/>
+<pin name="VCC_IO4@1" x="-17.78" y="-45.72" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@2" x="-20.32" y="-45.72" length="middle" direction="pwr" rot="R90"/>
 <pin name="IO21" x="2.54" y="-45.72" length="middle" rot="R90"/>
 <pin name="IO22" x="5.08" y="-45.72" length="middle" rot="R90"/>
 <pin name="IO23" x="7.62" y="-45.72" length="middle" rot="R90"/>
 <pin name="IO24" x="10.16" y="-45.72" length="middle" rot="R90"/>
-<pin name="GND@3" x="-15.24" y="-45.72" length="middle" rot="R90"/>
+<pin name="GND@3" x="-15.24" y="-45.72" length="middle" direction="pwr" rot="R90"/>
 <pin name="IO25" x="22.86" y="-45.72" length="middle" rot="R90"/>
-<pin name="VCC_INT@1" x="-12.7" y="-45.72" length="middle" rot="R90"/>
+<pin name="VCC_INT@1" x="-12.7" y="-45.72" length="middle" direction="pwr" rot="R90"/>
 <pin name="IO26" x="25.4" y="-45.72" length="middle" rot="R90"/>
 <pin name="IO27" x="27.94" y="-45.72" length="middle" rot="R90"/>
 <pin name="IO28" x="30.48" y="-45.72" length="middle" rot="R90"/>
 <pin name="IO29" x="45.72" y="-30.48" length="middle" rot="R180"/>
 <pin name="IO30" x="45.72" y="-27.94" length="middle" rot="R180"/>
-<pin name="VCC_INT@2" x="15.24" y="-45.72" length="middle" rot="R90"/>
-<pin name="GND@4" x="12.7" y="-45.72" length="middle" rot="R90"/>
+<pin name="VCC_INT@2" x="15.24" y="-45.72" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@4" x="12.7" y="-45.72" length="middle" direction="pwr" rot="R90"/>
 <pin name="IO31" x="45.72" y="-25.4" length="middle" rot="R180"/>
 <pin name="IO32" x="45.72" y="-22.86" length="middle" rot="R180"/>
 <pin name="IO33" x="45.72" y="-20.32" length="middle" rot="R180"/>
@@ -21356,8 +21356,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pin name="IO40" x="45.72" y="20.32" length="middle" rot="R180"/>
 <pin name="IO41" x="45.72" y="22.86" length="middle" rot="R180"/>
 <pin name="IO42" x="45.72" y="25.4" length="middle" rot="R180"/>
-<pin name="VCC_IO3" x="45.72" y="-10.16" length="middle" rot="R180"/>
-<pin name="GND@6" x="45.72" y="-12.7" length="middle" rot="R180"/>
+<pin name="VCC_IO3" x="45.72" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND@6" x="45.72" y="-12.7" length="middle" direction="pwr" rot="R180"/>
 <pin name="IO43" x="45.72" y="27.94" length="middle" rot="R180"/>
 <pin name="CONF_DONE" x="45.72" y="-7.62" length="middle" rot="R180"/>
 <pin name="/STATUS" x="45.72" y="-5.08" length="middle" rot="R180"/>
@@ -21374,13 +21374,13 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pin name="IO54" x="-2.54" y="45.72" length="middle" rot="R270"/>
 <pin name="IO55" x="-5.08" y="45.72" length="middle" rot="R270"/>
 <pin name="IO56" x="-7.62" y="45.72" length="middle" rot="R270"/>
-<pin name="GND@7" x="17.78" y="45.72" length="middle" rot="R270"/>
+<pin name="GND@7" x="17.78" y="45.72" length="middle" direction="pwr" rot="R270"/>
 <pin name="IO57" x="-10.16" y="45.72" length="middle" rot="R270"/>
 <pin name="IO58" x="-22.86" y="45.72" length="middle" rot="R270"/>
 <pin name="IO59" x="-25.4" y="45.72" length="middle" rot="R270"/>
 <pin name="IO60" x="-27.94" y="45.72" length="middle" rot="R270"/>
 <pin name="IO61" x="-30.48" y="45.72" length="middle" rot="R270"/>
-<pin name="GND@9" x="-15.24" y="45.72" length="middle" rot="R270"/>
+<pin name="GND@9" x="-15.24" y="45.72" length="middle" direction="pwr" rot="R270"/>
 <wire x1="-40.64" y1="-40.64" x2="-40.64" y2="40.64" width="0.4064" layer="94"/>
 <wire x1="-40.64" y1="40.64" x2="40.64" y2="40.64" width="0.4064" layer="94"/>
 <wire x1="40.64" y1="40.64" x2="40.64" y2="-40.64" width="0.4064" layer="94"/>
@@ -21388,27 +21388,27 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <text x="0" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="-20.32" y="-7.62" size="3.81" layer="96">&gt;VALUE</text>
 <pin name="/CSO" x="-45.72" y="17.78" length="middle"/>
-<pin name="DATA0" x="-45.72" y="15.24" length="middle"/>
+<pin name="DATA0" x="-45.72" y="15.24" length="middle" direction="in"/>
 <pin name="/CONFIG" x="-45.72" y="12.7" length="middle"/>
-<pin name="VCCA_PLL1" x="-45.72" y="10.16" length="middle"/>
-<pin name="GNDA_PLL1" x="-45.72" y="5.08" length="middle"/>
-<pin name="/CEO" x="-45.72" y="2.54" length="middle"/>
-<pin name="/CE" x="-45.72" y="0" length="middle"/>
-<pin name="MSEL0" x="-45.72" y="-2.54" length="middle"/>
-<pin name="MSEL1" x="-45.72" y="-5.08" length="middle"/>
+<pin name="VCCA_PLL1" x="-45.72" y="10.16" length="middle" direction="pwr"/>
+<pin name="GNDA_PLL1" x="-45.72" y="5.08" length="middle" direction="pwr"/>
+<pin name="/CEO" x="-45.72" y="2.54" length="middle" direction="out"/>
+<pin name="/CE" x="-45.72" y="0" length="middle" direction="in"/>
+<pin name="MSEL0" x="-45.72" y="-2.54" length="middle" direction="in"/>
+<pin name="MSEL1" x="-45.72" y="-5.08" length="middle" direction="in"/>
 <pin name="DCLK" x="-45.72" y="-7.62" length="middle"/>
-<pin name="ASDO" x="-45.72" y="-10.16" length="middle"/>
+<pin name="ASDO" x="-45.72" y="-10.16" length="middle" direction="out"/>
 <pin name="IO16" x="-10.16" y="-45.72" length="middle" rot="R90"/>
 <pin name="IO17" x="-7.62" y="-45.72" length="middle" rot="R90"/>
 <pin name="IO18" x="-5.08" y="-45.72" length="middle" rot="R90"/>
-<pin name="GND@5" x="17.78" y="-45.72" length="middle" rot="R90"/>
-<pin name="VCC_IO4@2" x="20.32" y="-45.72" length="middle" rot="R90"/>
-<pin name="VCC_IO2@1" x="20.32" y="45.72" length="middle" rot="R270"/>
-<pin name="VCC_INT@3" x="15.24" y="45.72" length="middle" rot="R270"/>
-<pin name="GND@8" x="12.7" y="45.72" length="middle" rot="R270"/>
-<pin name="VCC_INT@4" x="-12.7" y="45.72" length="middle" rot="R270"/>
-<pin name="VCC_IO2@2" x="-17.78" y="45.72" length="middle" rot="R270"/>
-<pin name="GND@10" x="-20.32" y="45.72" length="middle" rot="R270"/>
+<pin name="GND@5" x="17.78" y="-45.72" length="middle" direction="pwr" rot="R90"/>
+<pin name="VCC_IO4@2" x="20.32" y="-45.72" length="middle" direction="pwr" rot="R90"/>
+<pin name="VCC_IO2@1" x="20.32" y="45.72" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC_INT@3" x="15.24" y="45.72" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND@8" x="12.7" y="45.72" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC_INT@4" x="-12.7" y="45.72" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC_IO2@2" x="-17.78" y="45.72" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND@10" x="-20.32" y="45.72" length="middle" direction="pwr" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -21674,55 +21674,55 @@ the respective device descriptions.&lt;p&gt;
 <text x="-11.43" y="-40.64" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-11.43" y="41.402" size="1.778" layer="95">&gt;NAME</text>
 <pin name="VCC@1" x="15.24" y="38.1" visible="pin" length="middle" direction="pwr" rot="R180"/>
-<pin name="M2" x="15.24" y="35.56" visible="pin" length="middle" rot="R180"/>
-<pin name="A12" x="15.24" y="33.02" visible="pin" length="middle" rot="R180"/>
-<pin name="A13" x="15.24" y="30.48" visible="pin" length="middle" rot="R180"/>
-<pin name="A14" x="15.24" y="27.94" visible="pin" length="middle" rot="R180"/>
+<pin name="M2" x="15.24" y="35.56" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="A12" x="15.24" y="33.02" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="A13" x="15.24" y="30.48" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="A14" x="15.24" y="27.94" visible="pin" length="middle" direction="in" rot="R180"/>
 <pin name="D7" x="15.24" y="25.4" visible="pin" length="middle" rot="R180"/>
 <pin name="D6" x="15.24" y="22.86" visible="pin" length="middle" rot="R180"/>
 <pin name="D5" x="15.24" y="20.32" visible="pin" length="middle" rot="R180"/>
 <pin name="D4" x="15.24" y="17.78" visible="pin" length="middle" rot="R180"/>
-<pin name="/ROMSEL" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="/PWR" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="VRAMCS" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="PA7" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="PA8" x="15.24" y="-12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="PA9" x="15.24" y="-15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="PA11" x="15.24" y="-20.32" visible="pin" length="middle" rot="R180"/>
-<pin name="PA12" x="15.24" y="-22.86" visible="pin" length="middle" rot="R180"/>
+<pin name="/ROMSEL" x="15.24" y="5.08" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="/PWR" x="15.24" y="-2.54" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="VRAMCS" x="15.24" y="-5.08" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="PA7" x="15.24" y="-10.16" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="PA8" x="15.24" y="-12.7" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="PA9" x="15.24" y="-15.24" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="PA11" x="15.24" y="-20.32" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="PA12" x="15.24" y="-22.86" visible="pin" length="middle" direction="in" rot="R180"/>
 <pin name="PD7" x="15.24" y="-27.94" visible="pin" length="middle" rot="R180"/>
 <pin name="PD6" x="15.24" y="-30.48" visible="pin" length="middle" rot="R180"/>
 <pin name="PD5" x="15.24" y="-33.02" visible="pin" length="middle" rot="R180"/>
 <pin name="PD4" x="15.24" y="-35.56" visible="pin" length="middle" rot="R180"/>
 <pin name="GND@1" x="-15.24" y="38.1" visible="pin" length="middle" direction="pwr"/>
-<pin name="A11" x="-15.24" y="35.56" visible="pin" length="middle"/>
-<pin name="A10" x="-15.24" y="33.02" visible="pin" length="middle"/>
-<pin name="A9" x="-15.24" y="30.48" visible="pin" length="middle"/>
-<pin name="A8" x="-15.24" y="27.94" visible="pin" length="middle"/>
-<pin name="A7" x="-15.24" y="25.4" visible="pin" length="middle"/>
-<pin name="A6" x="-15.24" y="22.86" visible="pin" length="middle"/>
-<pin name="A5" x="-15.24" y="20.32" visible="pin" length="middle"/>
-<pin name="VA10" x="-15.24" y="-5.08" visible="pin" length="middle"/>
-<pin name="PA5" x="-15.24" y="-10.16" visible="pin" length="middle"/>
+<pin name="A11" x="-15.24" y="35.56" visible="pin" length="middle" direction="in"/>
+<pin name="A10" x="-15.24" y="33.02" visible="pin" length="middle" direction="in"/>
+<pin name="A9" x="-15.24" y="30.48" visible="pin" length="middle" direction="in"/>
+<pin name="A8" x="-15.24" y="27.94" visible="pin" length="middle" direction="in"/>
+<pin name="A7" x="-15.24" y="25.4" visible="pin" length="middle" direction="in"/>
+<pin name="A6" x="-15.24" y="22.86" visible="pin" length="middle" direction="in"/>
+<pin name="A5" x="-15.24" y="20.32" visible="pin" length="middle" direction="in"/>
+<pin name="VA10" x="-15.24" y="-5.08" visible="pin" length="middle" direction="out"/>
+<pin name="PA5" x="-15.24" y="-10.16" visible="pin" length="middle" direction="in"/>
 <pin name="PD1" x="-15.24" y="-27.94" visible="pin" length="middle"/>
 <pin name="PD2" x="-15.24" y="-30.48" visible="pin" length="middle"/>
 <pin name="PD3" x="-15.24" y="-33.02" visible="pin" length="middle"/>
-<pin name="VCC@2" x="-15.24" y="-35.56" visible="pin" length="middle"/>
-<pin name="A4" x="-15.24" y="17.78" visible="pin" length="middle"/>
-<pin name="A3" x="-15.24" y="15.24" visible="pin" length="middle"/>
-<pin name="A2" x="-15.24" y="12.7" visible="pin" length="middle"/>
+<pin name="VCC@2" x="-15.24" y="-35.56" visible="pin" length="middle" direction="pwr"/>
+<pin name="A4" x="-15.24" y="17.78" visible="pin" length="middle" direction="in"/>
+<pin name="A3" x="-15.24" y="15.24" visible="pin" length="middle" direction="in"/>
+<pin name="A2" x="-15.24" y="12.7" visible="pin" length="middle" direction="in"/>
 <pin name="A1" x="-15.24" y="10.16" visible="pin" length="middle"/>
-<pin name="A0" x="-15.24" y="7.62" visible="pin" length="middle"/>
-<pin name="R/W" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<pin name="A0" x="-15.24" y="7.62" visible="pin" length="middle" direction="in"/>
+<pin name="R/W" x="-15.24" y="5.08" visible="pin" length="middle" direction="in"/>
 <pin name="/IRQ" x="-15.24" y="2.54" visible="pin" length="middle"/>
-<pin name="GND@2" x="-15.24" y="0" visible="pin" length="middle"/>
-<pin name="/PRD" x="-15.24" y="-2.54" visible="pin" length="middle"/>
-<pin name="PA6" x="-15.24" y="-7.62" visible="pin" length="middle"/>
-<pin name="PA4" x="-15.24" y="-12.7" visible="pin" length="middle"/>
-<pin name="PA3" x="-15.24" y="-15.24" visible="pin" length="middle"/>
-<pin name="PA2" x="-15.24" y="-17.78" visible="pin" length="middle"/>
-<pin name="PA1" x="-15.24" y="-20.32" visible="pin" length="middle"/>
-<pin name="PA0" x="-15.24" y="-22.86" visible="pin" length="middle"/>
+<pin name="GND@2" x="-15.24" y="0" visible="pin" length="middle" direction="pwr"/>
+<pin name="/PRD" x="-15.24" y="-2.54" visible="pin" length="middle" direction="in"/>
+<pin name="PA6" x="-15.24" y="-7.62" visible="pin" length="middle" direction="in"/>
+<pin name="PA4" x="-15.24" y="-12.7" visible="pin" length="middle" direction="in"/>
+<pin name="PA3" x="-15.24" y="-15.24" visible="pin" length="middle" direction="in"/>
+<pin name="PA2" x="-15.24" y="-17.78" visible="pin" length="middle" direction="in"/>
+<pin name="PA1" x="-15.24" y="-20.32" visible="pin" length="middle" direction="in"/>
+<pin name="PA0" x="-15.24" y="-22.86" visible="pin" length="middle" direction="in"/>
 <pin name="PD0" x="-15.24" y="-25.4" visible="pin" length="middle"/>
 <pin name="D0" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
 <pin name="D1" x="15.24" y="10.16" visible="pin" length="middle" rot="R180"/>
@@ -21730,9 +21730,9 @@ the respective device descriptions.&lt;p&gt;
 <pin name="D3" x="15.24" y="15.24" visible="pin" length="middle" rot="R180"/>
 <pin name="SNDI" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="SNDO" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="/PA13" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="PA10" x="15.24" y="-17.78" visible="pin" length="middle" rot="R180"/>
-<pin name="PA13" x="15.24" y="-25.4" visible="pin" length="middle" rot="R180"/>
+<pin name="/PA13" x="15.24" y="-7.62" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="PA10" x="15.24" y="-17.78" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="PA13" x="15.24" y="-25.4" visible="pin" length="middle" direction="in" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -22736,8 +22736,8 @@ Source: RS Component / Phycomp</description>
 <symbols>
 <symbol name="LD1117AS33TR">
 <pin name="VIN" x="0" y="0" length="middle" direction="pwr"/>
-<pin name="VOUT" x="30.48" y="0" length="middle" rot="R180"/>
-<pin name="GND" x="15.24" y="-12.7" length="middle" rot="R90"/>
+<pin name="VOUT" x="30.48" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="15.24" y="-12.7" length="middle" direction="pwr" rot="R90"/>
 <wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.4064" layer="94"/>
 <wire x1="5.08" y1="-7.62" x2="25.4" y2="-7.62" width="0.4064" layer="94"/>
 <wire x1="25.4" y1="-7.62" x2="25.4" y2="2.54" width="0.4064" layer="94"/>
@@ -25649,14 +25649,14 @@ Source: www.kingbright.com</description>
 </packages>
 <symbols>
 <symbol name="SN74LVC2G34DBVR">
-<pin name="IN1" x="-15.24" y="12.7" visible="pad" length="middle"/>
-<pin name="OUT1" x="17.78" y="12.7" visible="pad" length="middle" rot="R180"/>
-<pin name="VCC" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="GND" x="-15.24" y="0" length="middle"/>
+<pin name="IN1" x="-15.24" y="12.7" visible="pad" length="middle" direction="in"/>
+<pin name="OUT1" x="17.78" y="12.7" visible="pad" length="middle" direction="out" rot="R180"/>
+<pin name="VCC" x="17.78" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="-15.24" y="0" length="middle" direction="pwr"/>
 <text x="-3.556" y="26.67" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-27.94" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="IN2" x="-15.24" y="-12.7" visible="pad" length="middle"/>
-<pin name="OUT2" x="17.78" y="-12.7" visible="pad" length="middle" rot="R180"/>
+<pin name="IN2" x="-15.24" y="-12.7" visible="pad" length="middle" direction="in"/>
+<pin name="OUT2" x="17.78" y="-12.7" visible="pad" length="middle" direction="out" rot="R180"/>
 <wire x1="-10.16" y1="25.4" x2="-10.16" y2="12.7" width="0.4064" layer="94"/>
 <wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.4064" layer="94"/>
 <wire x1="-10.16" y1="-12.7" x2="-10.16" y2="-25.4" width="0.4064" layer="94"/>
@@ -25798,26 +25798,26 @@ Source: www.kingbright.com</description>
 <wire x1="12.7" y1="17.78" x2="12.7" y2="-20.32" width="0.4064" layer="94"/>
 <text x="-7.623" y="21.592659375" size="1.77853125" layer="95">&gt;NAME</text>
 <text x="-7.6344" y="18.78518125" size="1.78051875" layer="96">&gt;VALUE</text>
-<pin name="VCC" x="17.78" y="15.24" length="middle" direction="out" rot="R180"/>
+<pin name="VCC" x="17.78" y="15.24" length="middle" direction="pwr" rot="R180"/>
 <pin name="GND" x="-17.78" y="-17.78" length="middle" direction="pwr"/>
-<pin name="EN" x="-17.78" y="15.24" length="middle" direction="pwr"/>
-<pin name="D8" x="-17.78" y="-12.7" length="middle" direction="pwr"/>
-<pin name="D1" x="-17.78" y="5.08" length="middle" direction="pwr"/>
-<pin name="D2" x="-17.78" y="2.54" length="middle" direction="pwr"/>
-<pin name="D3" x="-17.78" y="0" length="middle" direction="pwr"/>
-<pin name="D4" x="-17.78" y="-2.54" length="middle" direction="pwr"/>
-<pin name="D5" x="-17.78" y="-5.08" length="middle" direction="pwr"/>
-<pin name="D6" x="-17.78" y="-7.62" length="middle" direction="pwr"/>
-<pin name="D7" x="-17.78" y="-10.16" length="middle" direction="pwr"/>
-<pin name="Q8" x="17.78" y="-12.7" length="middle" direction="pwr" rot="R180"/>
-<pin name="Q1" x="17.78" y="5.08" length="middle" direction="pwr" rot="R180"/>
-<pin name="Q2" x="17.78" y="2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="Q3" x="17.78" y="0" length="middle" direction="pwr" rot="R180"/>
-<pin name="Q4" x="17.78" y="-2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="Q5" x="17.78" y="-5.08" length="middle" direction="pwr" rot="R180"/>
-<pin name="Q6" x="17.78" y="-7.62" length="middle" direction="pwr" rot="R180"/>
-<pin name="Q7" x="17.78" y="-10.16" length="middle" direction="pwr" rot="R180"/>
-<pin name="/OE" x="-17.78" y="10.16" length="middle" direction="out" function="dot"/>
+<pin name="EN" x="-17.78" y="15.24" length="middle" direction="in"/>
+<pin name="D8" x="-17.78" y="-12.7" length="middle" direction="in"/>
+<pin name="D1" x="-17.78" y="5.08" length="middle" direction="in"/>
+<pin name="D2" x="-17.78" y="2.54" length="middle" direction="in"/>
+<pin name="D3" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="D4" x="-17.78" y="-2.54" length="middle" direction="in"/>
+<pin name="D5" x="-17.78" y="-5.08" length="middle" direction="in"/>
+<pin name="D6" x="-17.78" y="-7.62" length="middle" direction="in"/>
+<pin name="D7" x="-17.78" y="-10.16" length="middle" direction="in"/>
+<pin name="Q8" x="17.78" y="-12.7" length="middle" direction="out" rot="R180"/>
+<pin name="Q1" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="Q2" x="17.78" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Q3" x="17.78" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="Q4" x="17.78" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Q5" x="17.78" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="Q6" x="17.78" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="Q7" x="17.78" y="-10.16" length="middle" direction="out" rot="R180"/>
+<pin name="/OE" x="-17.78" y="10.16" length="middle" direction="in" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -29156,7 +29156,7 @@ Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
 <pin name="CH1_IN" x="-17.78" y="5.08" length="middle" direction="in"/>
 <pin name="CH2_IN" x="-17.78" y="2.54" length="middle" direction="in"/>
 <pin name="CH3_IN" x="-17.78" y="0" length="middle" direction="in"/>
-<pin name="GND" x="17.78" y="-5.08" length="middle" direction="in" rot="R180"/>
+<pin name="GND" x="17.78" y="-5.08" length="middle" direction="pwr" rot="R180"/>
 <pin name="VS+" x="-17.78" y="-5.08" length="middle" direction="pwr"/>
 <pin name="CH1_OUT" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
 <pin name="CH2_OUT" x="17.78" y="2.54" length="middle" direction="out" rot="R180"/>
@@ -29179,71 +29179,6 @@ Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
 <connect gate="G$1" pin="CH3_OUT" pad="6"/>
 <connect gate="G$1" pin="GND" pad="5"/>
 <connect gate="G$1" pin="VS+" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="SN74LVC1G125DBVR">
-<packages>
-<package name="SOT95P280X145-5N">
-<circle x="-2.41" y="1.05" radius="0.1" width="0.2" layer="21"/>
-<circle x="-2.41" y="1.05" radius="0.1" width="0.2" layer="51"/>
-<text x="-2.6" y="2" size="1.016" layer="25">&gt;NAME</text>
-<text x="-2.6" y="-2" size="1.016" layer="27" align="top-left">&gt;VALUE</text>
-<wire x1="-0.33" y1="1.45" x2="0.33" y2="1.45" width="0.127" layer="21"/>
-<wire x1="0.8" y1="0.335" x2="0.8" y2="-0.335" width="0.127" layer="21"/>
-<wire x1="0.33" y1="-1.45" x2="-0.33" y2="-1.45" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-1.45" x2="-0.8" y2="1.45" width="0.127" layer="51"/>
-<wire x1="0.8" y1="1.45" x2="0.8" y2="-1.45" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="1.45" x2="0.8" y2="1.45" width="0.127" layer="51"/>
-<wire x1="0.8" y1="-1.45" x2="-0.8" y2="-1.45" width="0.127" layer="51"/>
-<wire x1="-2.11" y1="1.7" x2="2.11" y2="1.7" width="0.05" layer="39"/>
-<wire x1="2.11" y1="1.7" x2="2.11" y2="-1.7" width="0.05" layer="39"/>
-<wire x1="2.11" y1="-1.7" x2="-2.11" y2="-1.7" width="0.05" layer="39"/>
-<wire x1="-2.11" y1="-1.7" x2="-2.11" y2="1.7" width="0.05" layer="39"/>
-<smd name="1" x="-1.255" y="0.95" dx="1.21" dy="0.59" layer="1" roundness="50"/>
-<smd name="2" x="-1.255" y="0" dx="1.21" dy="0.59" layer="1" roundness="50"/>
-<smd name="3" x="-1.255" y="-0.95" dx="1.21" dy="0.59" layer="1" roundness="50"/>
-<smd name="4" x="1.255" y="-0.95" dx="1.21" dy="0.59" layer="1" roundness="50"/>
-<smd name="5" x="1.255" y="0.95" dx="1.21" dy="0.59" layer="1" roundness="50"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SN74LVC1G125DBVR">
-<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.41" layer="94"/>
-<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.41" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.41" layer="94"/>
-<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.41" layer="94"/>
-<text x="-12.7" y="11.16" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-12.7" y="-14.16" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
-<pin name="A" x="-17.78" y="0" length="middle" direction="in"/>
-<pin name="/OE" x="-17.78" y="7.62" length="middle" function="dot"/>
-<pin name="VCC" x="17.78" y="7.62" length="middle" direction="pwr" rot="R180"/>
-<pin name="Y" x="17.78" y="0" length="middle" direction="out" rot="R180"/>
-<pin name="GND" x="17.78" y="-7.62" length="middle" direction="pwr" rot="R180"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SN74LVC1G125DBVR" prefix="U">
-<gates>
-<gate name="A" symbol="SN74LVC1G125DBVR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT95P280X145-5N">
-<connects>
-<connect gate="A" pin="/OE" pad="1"/>
-<connect gate="A" pin="A" pad="2"/>
-<connect gate="A" pin="GND" pad="3"/>
-<connect gate="A" pin="VCC" pad="5"/>
-<connect gate="A" pin="Y" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -29279,10 +29214,10 @@ Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
 </packages>
 <symbols>
 <symbol name="74LVC1G04GV">
-<pin name="IN" x="-10.16" y="0" length="middle" function="dot"/>
-<pin name="OUT" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="VCC" x="2.54" y="10.16" visible="off" length="middle" rot="R270"/>
-<pin name="GND" x="2.54" y="-10.16" visible="off" length="middle" rot="R90"/>
+<pin name="IN" x="-10.16" y="0" length="middle" direction="in" function="dot"/>
+<pin name="OUT" x="15.24" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="VCC" x="2.54" y="10.16" visible="off" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND" x="2.54" y="-10.16" visible="off" length="middle" direction="pwr" rot="R90"/>
 <wire x1="10.16" y1="0" x2="-5.08" y2="10.16" width="0.4064" layer="94"/>
 <wire x1="-5.08" y1="10.16" x2="-5.08" y2="-10.16" width="0.4064" layer="94"/>
 <wire x1="-5.08" y1="-10.16" x2="10.16" y2="0" width="0.4064" layer="94"/>
@@ -29344,14 +29279,14 @@ Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
 </packages>
 <symbols>
 <symbol name="SN74LVC1G3157">
-<pin name="0" x="-12.7" y="5.08" visible="pin" length="middle"/>
-<pin name="Z" x="12.7" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="VCC" x="2.54" y="15.24" length="middle" rot="R270"/>
-<pin name="GND" x="2.54" y="-15.24" length="middle" rot="R90"/>
+<pin name="0" x="-12.7" y="5.08" visible="pin" length="middle" direction="in"/>
+<pin name="Z" x="12.7" y="0" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="VCC" x="2.54" y="15.24" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND" x="2.54" y="-15.24" length="middle" direction="pwr" rot="R90"/>
 <text x="-3.556" y="24.13" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="20.32" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-12.7" y="-5.08" visible="pin" length="middle"/>
-<pin name="S" x="-2.54" y="15.24" visible="pin" length="middle" rot="R270"/>
+<pin name="1" x="-12.7" y="-5.08" visible="pin" length="middle" direction="in"/>
+<pin name="S" x="-2.54" y="15.24" visible="pin" length="middle" direction="in" rot="R270"/>
 <wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
 <wire x1="-7.62" y1="12.7" x2="7.62" y2="7.62" width="0.4064" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.4064" layer="94"/>
@@ -29374,71 +29309,6 @@ Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
 <connect gate="G$1" pin="S" pad="6"/>
 <connect gate="G$1" pin="VCC" pad="5"/>
 <connect gate="G$1" pin="Z" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="SN74LVC1G240DBVR">
-<packages>
-<package name="SOT95P280X145-5N">
-<circle x="-2.41" y="1.05" radius="0.1" width="0.2" layer="21"/>
-<circle x="-2.41" y="1.05" radius="0.1" width="0.2" layer="51"/>
-<text x="-2.6" y="2" size="1.016" layer="25">&gt;NAME</text>
-<text x="-2.6" y="-2" size="1.016" layer="27" align="top-left">&gt;VALUE</text>
-<wire x1="-0.33" y1="1.45" x2="0.33" y2="1.45" width="0.127" layer="21"/>
-<wire x1="0.8" y1="0.335" x2="0.8" y2="-0.335" width="0.127" layer="21"/>
-<wire x1="0.33" y1="-1.45" x2="-0.33" y2="-1.45" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-1.45" x2="-0.8" y2="1.45" width="0.127" layer="51"/>
-<wire x1="0.8" y1="1.45" x2="0.8" y2="-1.45" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="1.45" x2="0.8" y2="1.45" width="0.127" layer="51"/>
-<wire x1="0.8" y1="-1.45" x2="-0.8" y2="-1.45" width="0.127" layer="51"/>
-<wire x1="-2.11" y1="1.7" x2="2.11" y2="1.7" width="0.05" layer="39"/>
-<wire x1="2.11" y1="1.7" x2="2.11" y2="-1.7" width="0.05" layer="39"/>
-<wire x1="2.11" y1="-1.7" x2="-2.11" y2="-1.7" width="0.05" layer="39"/>
-<wire x1="-2.11" y1="-1.7" x2="-2.11" y2="1.7" width="0.05" layer="39"/>
-<smd name="1" x="-1.255" y="0.95" dx="1.21" dy="0.59" layer="1" roundness="50"/>
-<smd name="2" x="-1.255" y="0" dx="1.21" dy="0.59" layer="1" roundness="50"/>
-<smd name="3" x="-1.255" y="-0.95" dx="1.21" dy="0.59" layer="1" roundness="50"/>
-<smd name="4" x="1.255" y="-0.95" dx="1.21" dy="0.59" layer="1" roundness="50"/>
-<smd name="5" x="1.255" y="0.95" dx="1.21" dy="0.59" layer="1" roundness="50"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SN74LVC1G240DBVR">
-<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.41" layer="94"/>
-<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.41" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.41" layer="94"/>
-<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.41" layer="94"/>
-<text x="-12.7" y="11.16" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-12.7" y="-14.16" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
-<pin name="A" x="-17.78" y="-7.62" length="middle" direction="in"/>
-<pin name="/OE" x="-17.78" y="7.62" length="middle" function="dot"/>
-<pin name="VCC" x="17.78" y="7.62" length="middle" direction="pwr" rot="R180"/>
-<pin name="Y" x="17.78" y="0" length="middle" direction="out" function="dot" rot="R180"/>
-<pin name="GND" x="17.78" y="-7.62" length="middle" direction="pwr" rot="R180"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SN74LVC1G240DBVR" prefix="U" uservalue="yes">
-<gates>
-<gate name="A" symbol="SN74LVC1G240DBVR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT95P280X145-5N">
-<connects>
-<connect gate="A" pin="/OE" pad="1"/>
-<connect gate="A" pin="A" pad="2"/>
-<connect gate="A" pin="GND" pad="3"/>
-<connect gate="A" pin="VCC" pad="5"/>
-<connect gate="A" pin="Y" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -29829,6 +29699,136 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SN74LVC1G240DBVR">
+<packages>
+<package name="SOT95P280X145-5N">
+<circle x="-2.41" y="1.05" radius="0.1" width="0.2" layer="21"/>
+<circle x="-2.41" y="1.05" radius="0.1" width="0.2" layer="51"/>
+<text x="-2.6" y="2" size="1.016" layer="25">&gt;NAME</text>
+<text x="-2.6" y="-2" size="1.016" layer="27" align="top-left">&gt;VALUE</text>
+<wire x1="-0.33" y1="1.45" x2="0.33" y2="1.45" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.335" x2="0.8" y2="-0.335" width="0.127" layer="21"/>
+<wire x1="0.33" y1="-1.45" x2="-0.33" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-1.45" x2="-0.8" y2="1.45" width="0.127" layer="51"/>
+<wire x1="0.8" y1="1.45" x2="0.8" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="1.45" x2="0.8" y2="1.45" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-1.45" x2="-0.8" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-2.11" y1="1.7" x2="2.11" y2="1.7" width="0.05" layer="39"/>
+<wire x1="2.11" y1="1.7" x2="2.11" y2="-1.7" width="0.05" layer="39"/>
+<wire x1="2.11" y1="-1.7" x2="-2.11" y2="-1.7" width="0.05" layer="39"/>
+<wire x1="-2.11" y1="-1.7" x2="-2.11" y2="1.7" width="0.05" layer="39"/>
+<smd name="1" x="-1.255" y="0.95" dx="1.21" dy="0.59" layer="1" roundness="50"/>
+<smd name="2" x="-1.255" y="0" dx="1.21" dy="0.59" layer="1" roundness="50"/>
+<smd name="3" x="-1.255" y="-0.95" dx="1.21" dy="0.59" layer="1" roundness="50"/>
+<smd name="4" x="1.255" y="-0.95" dx="1.21" dy="0.59" layer="1" roundness="50"/>
+<smd name="5" x="1.255" y="0.95" dx="1.21" dy="0.59" layer="1" roundness="50"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SN74LVC1G240DBVR">
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.41" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.41" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.41" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.41" layer="94"/>
+<text x="-12.7" y="11.16" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-12.7" y="-14.16" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+<pin name="A" x="-17.78" y="-7.62" length="middle" direction="in"/>
+<pin name="/OE" x="-17.78" y="7.62" length="middle" function="dot"/>
+<pin name="VCC" x="17.78" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="Y" x="17.78" y="0" length="middle" direction="hiz" function="dot" rot="R180"/>
+<pin name="GND" x="17.78" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SN74LVC1G240DBVR" prefix="U" uservalue="yes">
+<gates>
+<gate name="A" symbol="SN74LVC1G240DBVR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P280X145-5N">
+<connects>
+<connect gate="A" pin="/OE" pad="1"/>
+<connect gate="A" pin="A" pad="2"/>
+<connect gate="A" pin="GND" pad="3"/>
+<connect gate="A" pin="VCC" pad="5"/>
+<connect gate="A" pin="Y" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SN74LVC1G125DBVR">
+<packages>
+<package name="SOT95P280X145-5N">
+<circle x="-2.41" y="1.05" radius="0.1" width="0.2" layer="21"/>
+<circle x="-2.41" y="1.05" radius="0.1" width="0.2" layer="51"/>
+<text x="-2.6" y="2" size="1.016" layer="25">&gt;NAME</text>
+<text x="-2.6" y="-2" size="1.016" layer="27" align="top-left">&gt;VALUE</text>
+<wire x1="-0.33" y1="1.45" x2="0.33" y2="1.45" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.335" x2="0.8" y2="-0.335" width="0.127" layer="21"/>
+<wire x1="0.33" y1="-1.45" x2="-0.33" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-1.45" x2="-0.8" y2="1.45" width="0.127" layer="51"/>
+<wire x1="0.8" y1="1.45" x2="0.8" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="1.45" x2="0.8" y2="1.45" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-1.45" x2="-0.8" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-2.11" y1="1.7" x2="2.11" y2="1.7" width="0.05" layer="39"/>
+<wire x1="2.11" y1="1.7" x2="2.11" y2="-1.7" width="0.05" layer="39"/>
+<wire x1="2.11" y1="-1.7" x2="-2.11" y2="-1.7" width="0.05" layer="39"/>
+<wire x1="-2.11" y1="-1.7" x2="-2.11" y2="1.7" width="0.05" layer="39"/>
+<smd name="1" x="-1.255" y="0.95" dx="1.21" dy="0.59" layer="1" roundness="50"/>
+<smd name="2" x="-1.255" y="0" dx="1.21" dy="0.59" layer="1" roundness="50"/>
+<smd name="3" x="-1.255" y="-0.95" dx="1.21" dy="0.59" layer="1" roundness="50"/>
+<smd name="4" x="1.255" y="-0.95" dx="1.21" dy="0.59" layer="1" roundness="50"/>
+<smd name="5" x="1.255" y="0.95" dx="1.21" dy="0.59" layer="1" roundness="50"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SN74LVC1G125DBVR">
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.41" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.41" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.41" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.41" layer="94"/>
+<text x="-12.7" y="11.16" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-12.7" y="-14.16" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+<pin name="A" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="/OE" x="-17.78" y="7.62" length="middle" direction="in" function="dot"/>
+<pin name="VCC" x="17.78" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="Y" x="17.78" y="0" length="middle" direction="hiz" rot="R180"/>
+<pin name="GND" x="17.78" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SN74LVC1G125DBVR" prefix="U">
+<gates>
+<gate name="A" symbol="SN74LVC1G125DBVR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P280X145-5N">
+<connects>
+<connect gate="A" pin="/OE" pad="1"/>
+<connect gate="A" pin="A" pad="2"/>
+<connect gate="A" pin="GND" pad="3"/>
+<connect gate="A" pin="VCC" pad="5"/>
+<connect gate="A" pin="Y" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -29849,14 +29849,14 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="J1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1" value="NTSC/PAL"/>
+<part name="J1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1" value="/PAL"/>
 <part name="C6" library="rcl_my" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C7" library="rcl_my" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="1V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCINT" device=""/>
 <part name="GND60" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
-<part name="J2" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1" value="DENDY"/>
+<part name="J2" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1" value="/DENDY"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="1V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCINT" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -29926,14 +29926,14 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="GND70" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C13" library="rcl_my" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
-<part name="X3" library="con-conrad" library_urn="urn:adsk.eagle:library:135" deviceset="73398?" device="0-62" package3d_urn="urn:adsk.eagle:package:6324/1"/>
+<part name="X3" library="con-conrad" library_urn="urn:adsk.eagle:library:135" deviceset="73398?" device="0-62" package3d_urn="urn:adsk.eagle:package:6324/1" value="9V"/>
 <part name="GND72" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND74" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C12" library="rcl_my" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
 <part name="C11" library="rcl_my" deviceset="CPOL-EU" device="153CLV-0505" package3d_urn="urn:adsk.eagle:package:23402/2" value="100uF"/>
 <part name="GND75" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="X2" library="con-subd" library_urn="urn:adsk.eagle:library:189" deviceset="F15HPS" device="" package3d_urn="urn:adsk.eagle:package:10231/1"/>
-<part name="X4" library="con-subd" library_urn="urn:adsk.eagle:library:189" deviceset="F15HPS" device="" package3d_urn="urn:adsk.eagle:package:10231/1"/>
+<part name="X2" library="con-subd" library_urn="urn:adsk.eagle:library:189" deviceset="F15HPS" device="" package3d_urn="urn:adsk.eagle:package:10231/1" value="JOYPAD1"/>
+<part name="X4" library="con-subd" library_urn="urn:adsk.eagle:library:189" deviceset="F15HPS" device="" package3d_urn="urn:adsk.eagle:package:10231/1" value="JOYPAD2"/>
 <part name="GND100" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND101" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND104" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -29958,10 +29958,9 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="GND68" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C50" library="rcl_my" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
 <part name="C51" library="rcl_my" deviceset="CPOL-EU" device="153CLV-0505" package3d_urn="urn:adsk.eagle:package:23402/2" value="10uF"/>
-<part name="C52" library="rcl_my" deviceset="CPOL-EU" device="153CLV-0505" package3d_urn="urn:adsk.eagle:package:23402/2" value="10uF"/>
 <part name="C53" library="rcl_my" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
-<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML1206" package3d_urn="urn:adsk.eagle:package:15829/1"/>
-<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k"/>
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML1206" package3d_urn="urn:adsk.eagle:package:15829/1" value="GNL-1206YC"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k2"/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2k"/>
 <part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2k"/>
@@ -29986,7 +29985,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="51"/>
 <part name="C34" library="rcl_my" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
 <part name="C36" library="rcl_my" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
-<part name="JP3" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP4QE" device="" package3d_urn="urn:adsk.eagle:package:15451/1"/>
+<part name="JP3" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP4QE" device="" package3d_urn="urn:adsk.eagle:package:15451/1" value="#RESET"/>
 <part name="GND34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C5" library="rcl_my" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
@@ -30050,7 +30049,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="P+15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="DO-214AC" package3d_urn="urn:adsk.eagle:package:43416/2"/>
+<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="DO-214AC" package3d_urn="urn:adsk.eagle:package:43416/2" value="1N4007(M7)"/>
 <part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10"/>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
 <part name="RN7" library="resistor-dil" library_urn="urn:adsk.eagle:library:342" deviceset="4R-N" device="0603-ARC" package3d_urn="urn:adsk.eagle:package:24926/1" value="22"/>
@@ -30077,7 +30076,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="20k"/>
 <part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="39k"/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U10" library="SN74LVC1G125DBVR" deviceset="SN74LVC1G125DBVR" device=""/>
 <part name="GND69" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND77" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U6" library="74LVC1G04GV" deviceset="74LVC1G04GV" device=""/>
@@ -30090,11 +30088,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="VCC14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCIO" device=""/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="51"/>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="51"/>
-<part name="JP1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP4QE" device="" package3d_urn="urn:adsk.eagle:package:15451/1"/>
-<part name="U14" library="SN74LVC1G240DBVR" deviceset="SN74LVC1G240DBVR" device="" value="SN74LVC1G240DBVR"/>
-<part name="U13" library="SN74LVC1G240DBVR" deviceset="SN74LVC1G240DBVR" device="" value="SN74LVC1G240DBVR"/>
-<part name="U12" library="SN74LVC1G240DBVR" deviceset="SN74LVC1G240DBVR" device="" value="SN74LVC1G240DBVR"/>
-<part name="U11" library="SN74LVC1G240DBVR" deviceset="SN74LVC1G240DBVR" device="" value="SN74LVC1G240DBVR"/>
+<part name="JP1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP4QE" device="" package3d_urn="urn:adsk.eagle:package:15451/1" value="PWR_ON"/>
 <part name="RN8" library="resistor-dil" library_urn="urn:adsk.eagle:library:342" deviceset="4R-N" device="0603-ARC" package3d_urn="urn:adsk.eagle:package:24926/1" value="1k"/>
 <part name="GND55" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND81" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -30104,15 +30098,17 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="VR1" library="linear" deviceset="78*" device="Z" package3d_urn="urn:adsk.eagle:package:16416/2" technology="L05"/>
 <part name="C38" library="rcl_my" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="GND82" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U11" library="SN74LVC1G240DBVR" deviceset="SN74LVC1G240DBVR" device="" value="SN74LVC1G240DBVR"/>
+<part name="U12" library="SN74LVC1G240DBVR" deviceset="SN74LVC1G240DBVR" device="" value="SN74LVC1G240DBVR"/>
+<part name="U13" library="SN74LVC1G240DBVR" deviceset="SN74LVC1G240DBVR" device="" value="SN74LVC1G240DBVR"/>
+<part name="U14" library="SN74LVC1G240DBVR" deviceset="SN74LVC1G240DBVR" device="" value="SN74LVC1G240DBVR"/>
+<part name="C52" library="rcl_my" deviceset="CPOL-EU" device="153CLV-0505" package3d_urn="urn:adsk.eagle:package:23402/2" value="10uF"/>
+<part name="U10" library="SN74LVC1G125DBVR" deviceset="SN74LVC1G125DBVR" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="8.382" y="128.27" size="2.54" layer="94">JTAG</text>
-<text x="243.84" y="27.94" size="1.778" layer="98">JOYPAD 1</text>
-<text x="243.84" y="-27.94" size="1.778" layer="98">JOYPAD 2</text>
-<text x="-99.06" y="-50.8" size="1.778" layer="95">RESET</text>
-<text x="-256.54" y="-81.28" size="1.778" layer="95">PWR ON</text>
 <text x="191.262" y="-99.568" size="1.778" layer="91">4558</text>
 <text x="190.5" y="-137.922" size="1.778" layer="91">4558</text>
 </plain>
@@ -30170,11 +30166,11 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="GND7" gate="1" x="-205.74" y="-43.18" smashed="yes">
 <attribute name="VALUE" x="-208.28" y="-45.72" size="1.778" layer="96"/>
 </instance>
-<instance part="GND16" gate="1" x="-231.14" y="-7.62" smashed="yes">
-<attribute name="VALUE" x="-233.68" y="-10.16" size="1.778" layer="96"/>
+<instance part="GND16" gate="1" x="-231.14" y="-10.16" smashed="yes">
+<attribute name="VALUE" x="-233.68" y="-12.7" size="1.778" layer="96"/>
 </instance>
-<instance part="GND17" gate="1" x="-231.14" y="17.78" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-228.6" y="20.32" size="1.778" layer="96" rot="R180"/>
+<instance part="GND17" gate="1" x="-231.14" y="20.32" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-228.6" y="22.86" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="J1" gate="A" x="-104.14" y="-27.94" smashed="yes" rot="R270">
 <attribute name="NAME" x="-105.156" y="-25.908" size="1.778" layer="95"/>
@@ -30266,18 +30262,18 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="-45.72" y="69.469" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-43.688" y="64.389" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND31" gate="1" x="-50.8" y="60.96" smashed="yes">
-<attribute name="VALUE" x="-53.34" y="58.42" size="1.778" layer="96"/>
+<instance part="GND31" gate="1" x="-50.8" y="58.42" smashed="yes">
+<attribute name="VALUE" x="-53.34" y="55.88" size="1.778" layer="96"/>
 </instance>
-<instance part="GND35" gate="1" x="-40.64" y="60.96" smashed="yes">
-<attribute name="VALUE" x="-43.18" y="58.42" size="1.778" layer="96"/>
+<instance part="GND35" gate="1" x="-40.64" y="58.42" smashed="yes">
+<attribute name="VALUE" x="-43.18" y="55.88" size="1.778" layer="96"/>
 </instance>
 <instance part="C39" gate="G$1" x="93.98" y="5.08" smashed="yes" rot="R270">
 <attribute name="NAME" x="89.281" y="0.508" size="1.778" layer="95"/>
 <attribute name="VALUE" x="89.027" y="-2.286" size="1.778" layer="96"/>
 </instance>
-<instance part="GND36" gate="1" x="96.52" y="5.08" smashed="yes" rot="R90">
-<attribute name="VALUE" x="99.06" y="2.54" size="1.778" layer="96" rot="R90"/>
+<instance part="GND36" gate="1" x="99.06" y="5.08" smashed="yes" rot="R90">
+<attribute name="VALUE" x="101.6" y="2.54" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C33" gate="G$1" x="15.24" y="-81.28" smashed="yes" rot="R180">
 <attribute name="NAME" x="20.828" y="-75.057" size="1.778" layer="95" rot="R180"/>
@@ -30287,11 +30283,11 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="-7.62" y="-75.311" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-5.588" y="-80.391" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND37" gate="1" x="15.24" y="-83.82" smashed="yes">
-<attribute name="VALUE" x="12.7" y="-86.36" size="1.778" layer="96"/>
+<instance part="GND37" gate="1" x="15.24" y="-86.36" smashed="yes">
+<attribute name="VALUE" x="12.7" y="-88.9" size="1.778" layer="96"/>
 </instance>
-<instance part="GND38" gate="1" x="-12.7" y="-83.82" smashed="yes">
-<attribute name="VALUE" x="-15.24" y="-86.36" size="1.778" layer="96"/>
+<instance part="GND38" gate="1" x="-12.7" y="-86.36" smashed="yes">
+<attribute name="VALUE" x="-15.24" y="-88.9" size="1.778" layer="96"/>
 </instance>
 <instance part="C31" gate="G$1" x="-40.64" y="-63.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="-35.052" y="-57.277" size="1.778" layer="95" rot="R180"/>
@@ -30301,11 +30297,11 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="-45.72" y="-57.531" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-43.688" y="-62.611" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND41" gate="1" x="-40.64" y="-55.88" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-38.1" y="-53.34" size="1.778" layer="96" rot="R180"/>
+<instance part="GND41" gate="1" x="-40.64" y="-53.34" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-38.1" y="-50.8" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND42" gate="1" x="-50.8" y="-55.88" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-48.26" y="-53.34" size="1.778" layer="96" rot="R180"/>
+<instance part="GND42" gate="1" x="-50.8" y="-53.34" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-48.26" y="-50.8" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C25" gate="G$1" x="20.32" y="78.74" smashed="yes" rot="R180">
 <attribute name="NAME" x="25.908" y="84.963" size="1.778" layer="95" rot="R180"/>
@@ -30315,11 +30311,11 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="-12.7" y="84.709" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-10.668" y="79.629" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND45" gate="1" x="20.32" y="86.36" smashed="yes" rot="R180">
-<attribute name="VALUE" x="22.86" y="88.9" size="1.778" layer="96" rot="R180"/>
+<instance part="GND45" gate="1" x="20.32" y="88.9" smashed="yes" rot="R180">
+<attribute name="VALUE" x="22.86" y="91.44" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND46" gate="1" x="-17.78" y="86.36" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-15.24" y="88.9" size="1.778" layer="96" rot="R180"/>
+<instance part="GND46" gate="1" x="-17.78" y="88.9" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-15.24" y="91.44" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="L1" gate="G$1" x="-119.38" y="7.62" smashed="yes" rot="R90">
 <attribute name="NAME" x="-118.11" y="11.2014" size="1.778" layer="95" rot="R180"/>
@@ -30329,15 +30325,15 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="-81.534" y="39.751" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-78.74" y="36.195" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND47" gate="1" x="-88.9" y="40.64" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-86.36" y="43.18" size="1.778" layer="96" rot="R180"/>
+<instance part="GND47" gate="1" x="-88.9" y="43.18" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-86.36" y="45.72" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C40" gate="G$1" x="93.98" y="-12.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="89.281" y="-7.112" size="1.778" layer="95"/>
 <attribute name="VALUE" x="89.027" y="-9.906" size="1.778" layer="96"/>
 </instance>
-<instance part="GND54" gate="1" x="96.52" y="-12.7" smashed="yes" rot="R90">
-<attribute name="VALUE" x="99.06" y="-15.24" size="1.778" layer="96" rot="R90"/>
+<instance part="GND54" gate="1" x="99.06" y="-12.7" smashed="yes" rot="R90">
+<attribute name="VALUE" x="101.6" y="-15.24" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="CN1" gate="G$1" x="-327.66" y="2.54" smashed="yes">
 <attribute name="VALUE" x="-339.09" y="-38.1" size="1.778" layer="96"/>
@@ -30349,15 +30345,15 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="GND10" gate="1" x="-355.6" y="2.54" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-358.14" y="5.08" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND91" gate="1" x="-309.88" y="50.8" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-307.086" y="52.832" size="1.778" layer="96" rot="R180"/>
+<instance part="GND91" gate="1" x="-309.88" y="53.34" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-307.086" y="55.372" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C1" gate="G$1" x="-309.88" y="48.26" smashed="yes">
 <attribute name="NAME" x="-307.006" y="48.721" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-307.186" y="46.221" size="1.778" layer="96"/>
 </instance>
-<instance part="GND92" gate="1" x="-345.44" y="-43.18" smashed="yes">
-<attribute name="VALUE" x="-347.98" y="-45.72" size="1.778" layer="96"/>
+<instance part="GND92" gate="1" x="-345.44" y="-45.72" smashed="yes">
+<attribute name="VALUE" x="-347.98" y="-48.26" size="1.778" layer="96"/>
 </instance>
 <instance part="C2" gate="G$1" x="-345.44" y="-35.56" smashed="yes">
 <attribute name="NAME" x="-354.126" y="-39.019" size="1.778" layer="95"/>
@@ -30390,26 +30386,26 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="95.758" y="98.2726" size="1.778" layer="95"/>
 <attribute name="VALUE" x="102.108" y="98.298" size="1.778" layer="96"/>
 </instance>
-<instance part="GND15" gate="1" x="-208.28" y="-142.24" smashed="yes">
-<attribute name="VALUE" x="-210.82" y="-144.78" size="1.778" layer="96"/>
+<instance part="GND15" gate="1" x="-208.28" y="-144.78" smashed="yes">
+<attribute name="VALUE" x="-210.82" y="-147.32" size="1.778" layer="96"/>
 </instance>
-<instance part="GND18" gate="1" x="-187.96" y="-142.24" smashed="yes">
-<attribute name="VALUE" x="-190.5" y="-144.78" size="1.778" layer="96"/>
+<instance part="GND18" gate="1" x="-187.96" y="-144.78" smashed="yes">
+<attribute name="VALUE" x="-190.5" y="-147.32" size="1.778" layer="96"/>
 </instance>
-<instance part="GND19" gate="1" x="-167.64" y="-142.24" smashed="yes">
-<attribute name="VALUE" x="-170.18" y="-144.78" size="1.778" layer="96"/>
+<instance part="GND19" gate="1" x="-167.64" y="-144.78" smashed="yes">
+<attribute name="VALUE" x="-170.18" y="-147.32" size="1.778" layer="96"/>
 </instance>
-<instance part="GND27" gate="1" x="-208.28" y="-180.34" smashed="yes">
-<attribute name="VALUE" x="-210.82" y="-182.88" size="1.778" layer="96"/>
+<instance part="GND27" gate="1" x="-208.28" y="-182.88" smashed="yes">
+<attribute name="VALUE" x="-210.82" y="-185.42" size="1.778" layer="96"/>
 </instance>
-<instance part="GND29" gate="1" x="-167.64" y="-180.34" smashed="yes">
-<attribute name="VALUE" x="-170.18" y="-182.88" size="1.778" layer="96"/>
+<instance part="GND29" gate="1" x="-167.64" y="-182.88" smashed="yes">
+<attribute name="VALUE" x="-170.18" y="-185.42" size="1.778" layer="96"/>
 </instance>
-<instance part="GND40" gate="1" x="-187.96" y="-180.34" smashed="yes">
-<attribute name="VALUE" x="-190.5" y="-182.88" size="1.778" layer="96"/>
+<instance part="GND40" gate="1" x="-187.96" y="-182.88" smashed="yes">
+<attribute name="VALUE" x="-190.5" y="-185.42" size="1.778" layer="96"/>
 </instance>
-<instance part="GND73" gate="1" x="-154.93" y="-180.34" smashed="yes">
-<attribute name="VALUE" x="-157.47" y="-182.88" size="1.778" layer="96"/>
+<instance part="GND73" gate="1" x="-154.93" y="-182.88" smashed="yes">
+<attribute name="VALUE" x="-157.47" y="-185.42" size="1.778" layer="96"/>
 </instance>
 <instance part="VR4" gate="G$1" x="-193.04" y="-167.64" smashed="yes">
 <attribute name="NAME" x="-198.124209375" y="-162.5684" size="1.77946875" layer="95"/>
@@ -30419,8 +30415,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="-218.756" y="-138.179" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-218.576" y="-140.539" size="1.778" layer="96"/>
 </instance>
-<instance part="GND65" gate="1" x="-220.98" y="-142.24" smashed="yes">
-<attribute name="VALUE" x="-223.52" y="-144.78" size="1.778" layer="96"/>
+<instance part="GND65" gate="1" x="-220.98" y="-144.78" smashed="yes">
+<attribute name="VALUE" x="-223.52" y="-147.32" size="1.778" layer="96"/>
 </instance>
 <instance part="C15" gate="G$1" x="-208.28" y="-132.08" smashed="yes">
 <attribute name="NAME" x="-206.806" y="-138.079" size="1.778" layer="95"/>
@@ -30460,12 +30456,12 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="-163.88" y="-96.931" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-163.826" y="-99.719" size="1.778" layer="96"/>
 </instance>
-<instance part="X3" gate="G$1" x="-269.24" y="-93.98" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-266.7" y="-89.916" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="-266.7" y="-99.568" size="1.778" layer="96" rot="MR0"/>
+<instance part="X3" gate="G$1" x="-261.62" y="-93.98" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-267.716" y="-93.726" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="-267.716" y="-96.266" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND72" gate="1" x="-261.62" y="-101.6" smashed="yes">
-<attribute name="VALUE" x="-264.16" y="-104.14" size="1.778" layer="96"/>
+<instance part="GND72" gate="1" x="-254" y="-101.6" smashed="yes">
+<attribute name="VALUE" x="-256.54" y="-104.14" size="1.778" layer="96"/>
 </instance>
 <instance part="GND74" gate="1" x="-208.28" y="-104.14" smashed="yes">
 <attribute name="VALUE" x="-210.82" y="-106.68" size="1.778" layer="96"/>
@@ -30525,7 +30521,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </instance>
 <instance part="X2" gate="-1" x="233.68" y="45.72" smashed="yes">
 <attribute name="NAME" x="234.95" y="44.958" size="1.778" layer="95"/>
-<attribute name="VALUE" x="231.14" y="47.117" size="1.778" layer="96"/>
+<attribute name="VALUE" x="241.554" y="28.321" size="1.778" layer="96"/>
 </instance>
 <instance part="X4" gate="-2" x="233.68" y="-12.7" smashed="yes">
 <attribute name="NAME" x="234.95" y="-13.462" size="1.778" layer="95"/>
@@ -30571,7 +30567,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </instance>
 <instance part="X4" gate="-1" x="233.68" y="-10.16" smashed="yes">
 <attribute name="NAME" x="234.95" y="-10.922" size="1.778" layer="95"/>
-<attribute name="VALUE" x="231.14" y="-8.763" size="1.778" layer="96"/>
+<attribute name="VALUE" x="241.808" y="-27.559" size="1.778" layer="96"/>
 </instance>
 <instance part="GND100" gate="1" x="226.06" y="45.72" smashed="yes" rot="R270">
 <attribute name="VALUE" x="223.52" y="48.26" size="1.778" layer="96" rot="R270"/>
@@ -30653,8 +30649,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="203.49" y="-125.7614" size="1.778" layer="95"/>
 <attribute name="VALUE" x="206.49" y="-126.392" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND68" gate="1" x="175.26" y="-81.28" smashed="yes" rot="R270">
-<attribute name="VALUE" x="172.72" y="-78.74" size="1.778" layer="96" rot="R270"/>
+<instance part="GND68" gate="1" x="172.72" y="-81.28" smashed="yes" rot="R270">
+<attribute name="VALUE" x="170.18" y="-78.74" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="C50" gate="G$1" x="177.8" y="-81.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="179.869" y="-74.316" size="1.778" layer="95" rot="R180"/>
@@ -30664,17 +30660,13 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="217.999" y="-84.296" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="218.949" y="-86.786" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C52" gate="G$1" x="213.36" y="-129.54" smashed="yes" rot="R90">
-<attribute name="NAME" x="217.999" y="-122.396" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="218.949" y="-124.886" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="C53" gate="G$1" x="177.8" y="-157.48" smashed="yes">
 <attribute name="NAME" x="180.544" y="-159.669" size="1.778" layer="95"/>
 <attribute name="VALUE" x="180.598" y="-162.457" size="1.778" layer="96"/>
 </instance>
 <instance part="LED2" gate="G$1" x="-27.94" y="111.76" smashed="yes">
-<attribute name="NAME" x="-19.558" y="111.506" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-22.225" y="107.188" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="-36.83" y="112.014" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-32.639" y="109.22" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R4" gate="G$1" x="-27.94" y="119.38" smashed="yes" rot="R90">
 <attribute name="NAME" x="-20.2946" y="121.412" size="1.778" layer="95" rot="R180"/>
@@ -30771,27 +30763,27 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </instance>
 <instance part="JP3" gate="-1" x="-104.14" y="-48.26" smashed="yes" rot="R270">
 <attribute name="NAME" x="-104.14" y="-46.99" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-104.14" y="-53.975" size="1.778" layer="96"/>
+<attribute name="VALUE" x="-99.314" y="-50.419" size="1.778" layer="96"/>
 </instance>
-<instance part="GND34" gate="1" x="-109.22" y="-58.42" smashed="yes">
-<attribute name="VALUE" x="-111.76" y="-60.96" size="1.778" layer="96"/>
+<instance part="GND34" gate="1" x="-109.22" y="-60.96" smashed="yes">
+<attribute name="VALUE" x="-111.76" y="-63.5" size="1.778" layer="96"/>
 </instance>
-<instance part="GND2" gate="1" x="-167.64" y="71.12" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-165.1" y="73.66" size="1.778" layer="96" rot="R180"/>
+<instance part="GND2" gate="1" x="-167.64" y="73.66" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-165.1" y="76.2" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C5" gate="G$1" x="-167.64" y="68.58" smashed="yes">
 <attribute name="NAME" x="-164.766" y="69.041" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-164.946" y="66.541" size="1.778" layer="96"/>
 </instance>
-<instance part="GND96" gate="1" x="-231.14" y="152.4" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-228.6" y="154.94" size="1.778" layer="96" rot="R180"/>
+<instance part="GND96" gate="1" x="-231.14" y="154.94" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-228.6" y="157.48" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C3" gate="G$1" x="-231.14" y="149.86" smashed="yes">
 <attribute name="NAME" x="-228.266" y="150.321" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-228.446" y="147.821" size="1.778" layer="96"/>
 </instance>
-<instance part="GND1" gate="1" x="-124.46" y="-58.42" smashed="yes">
-<attribute name="VALUE" x="-127" y="-60.96" size="1.778" layer="96"/>
+<instance part="GND1" gate="1" x="-124.46" y="-60.96" smashed="yes">
+<attribute name="VALUE" x="-127" y="-63.5" size="1.778" layer="96"/>
 </instance>
 <instance part="C29" gate="G$1" x="-124.46" y="-55.88" smashed="yes" rot="R180">
 <attribute name="NAME" x="-117.094" y="-51.181" size="1.778" layer="95" rot="R180"/>
@@ -30902,8 +30894,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="201.041" y="41.148" size="1.778" layer="95"/>
 <attribute name="VALUE" x="200.787" y="38.354" size="1.778" layer="96"/>
 </instance>
-<instance part="GND53" gate="1" x="208.28" y="45.72" smashed="yes" rot="R90">
-<attribute name="VALUE" x="210.82" y="43.18" size="1.778" layer="96" rot="R90"/>
+<instance part="GND53" gate="1" x="210.82" y="45.72" smashed="yes" rot="R90">
+<attribute name="VALUE" x="213.36" y="43.18" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R32" gate="G$1" x="205.74" y="25.4" smashed="yes">
 <attribute name="NAME" x="204.042" y="23.4686" size="1.778" layer="95" rot="R180"/>
@@ -30945,24 +30937,24 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="VALUE" x="-231.902" y="83.312" size="1.778" layer="96"/>
 <attribute name="NAME" x="-241.3" y="83.312" size="1.778" layer="95"/>
 </instance>
-<instance part="GND28" gate="1" x="-218.44" y="152.4" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-215.9" y="154.94" size="1.778" layer="96" rot="R180"/>
+<instance part="GND28" gate="1" x="-218.44" y="154.94" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-215.9" y="157.48" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C4" gate="G$1" x="-218.44" y="149.86" smashed="yes">
 <attribute name="NAME" x="-215.566" y="150.321" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-215.746" y="147.821" size="1.778" layer="96"/>
 </instance>
-<instance part="GND13" gate="1" x="182.88" y="30.48" smashed="yes" rot="R90">
-<attribute name="VALUE" x="185.42" y="27.94" size="1.778" layer="96" rot="R90"/>
+<instance part="GND13" gate="1" x="185.42" y="30.48" smashed="yes" rot="R90">
+<attribute name="VALUE" x="187.96" y="27.94" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND14" gate="1" x="182.88" y="0" smashed="yes" rot="R90">
-<attribute name="VALUE" x="185.42" y="-2.54" size="1.778" layer="96" rot="R90"/>
+<instance part="GND14" gate="1" x="185.42" y="0" smashed="yes" rot="R90">
+<attribute name="VALUE" x="187.96" y="-2.54" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND51" gate="1" x="182.88" y="-30.48" smashed="yes" rot="R90">
-<attribute name="VALUE" x="185.42" y="-33.02" size="1.778" layer="96" rot="R90"/>
+<instance part="GND51" gate="1" x="185.42" y="-30.48" smashed="yes" rot="R90">
+<attribute name="VALUE" x="187.96" y="-33.02" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND52" gate="1" x="182.88" y="-60.96" smashed="yes" rot="R90">
-<attribute name="VALUE" x="185.42" y="-63.5" size="1.778" layer="96" rot="R90"/>
+<instance part="GND52" gate="1" x="185.42" y="-60.96" smashed="yes" rot="R90">
+<attribute name="VALUE" x="187.96" y="-63.5" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R33" gate="G$1" x="205.74" y="-25.4" smashed="yes">
 <attribute name="NAME" x="204.042" y="-27.3314" size="1.778" layer="95" rot="R180"/>
@@ -31051,8 +31043,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="VALUE" x="154.94" y="-139.7" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="D1" gate="G$1" x="-233.68" y="-91.44" smashed="yes">
-<attribute name="NAME" x="-235.204" y="-89.1794" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-231.14" y="-93.7514" size="1.778" layer="96"/>
+<attribute name="NAME" x="-235.204" y="-85.8774" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-240.792" y="-88.6714" size="1.778" layer="96"/>
 </instance>
 <instance part="R17" gate="G$1" x="71.12" y="-27.94" smashed="yes">
 <attribute name="NAME" x="70.692" y="-29.6174" size="1.778" layer="95" rot="R180"/>
@@ -31097,8 +31089,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="213.109" y="116.778" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="214.453" y="113.91" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND57" gate="1" x="-187.96" y="-78.74" smashed="yes">
-<attribute name="VALUE" x="-190.5" y="-81.28" size="1.778" layer="96"/>
+<instance part="GND57" gate="1" x="-187.96" y="-81.28" smashed="yes">
+<attribute name="VALUE" x="-190.5" y="-83.82" size="1.778" layer="96"/>
 </instance>
 <instance part="GND58" gate="1" x="-167.64" y="-81.28" smashed="yes">
 <attribute name="VALUE" x="-170.18" y="-83.82" size="1.778" layer="96"/>
@@ -31118,8 +31110,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="140.208" y="100.203" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="141.986" y="97.155" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND61" gate="1" x="144.78" y="93.98" smashed="yes">
-<attribute name="VALUE" x="142.24" y="91.44" size="1.778" layer="96"/>
+<instance part="GND61" gate="1" x="144.78" y="91.44" smashed="yes">
+<attribute name="VALUE" x="142.24" y="88.9" size="1.778" layer="96"/>
 </instance>
 <instance part="C10" gate="G$1" x="-154.94" y="-71.12" smashed="yes">
 <attribute name="NAME" x="-152.716" y="-77.219" size="1.778" layer="95"/>
@@ -31196,12 +31188,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="GND23" gate="1" x="119.38" y="127" smashed="yes" rot="R180">
 <attribute name="VALUE" x="121.92" y="129.54" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U10" gate="A" x="165.1" y="68.58" smashed="yes">
-<attribute name="NAME" x="162.56" y="79.74" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="152.4" y="54.42" size="2.0828" layer="96" ratio="10" rot="SR0"/>
-</instance>
-<instance part="GND69" gate="1" x="182.88" y="60.96" smashed="yes" rot="R90">
-<attribute name="VALUE" x="185.42" y="58.42" size="1.778" layer="96" rot="R90"/>
+<instance part="GND69" gate="1" x="185.42" y="60.96" smashed="yes" rot="R90">
+<attribute name="VALUE" x="187.96" y="58.42" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND77" gate="1" x="144.78" y="76.2" smashed="yes" rot="R270">
 <attribute name="VALUE" x="142.24" y="78.74" size="1.778" layer="96" rot="R270"/>
@@ -31220,8 +31208,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="-101.219" y="69.088" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-101.473" y="66.294" size="1.778" layer="96"/>
 </instance>
-<instance part="GND79" gate="1" x="-93.98" y="73.66" smashed="yes" rot="R90">
-<attribute name="VALUE" x="-91.44" y="71.12" size="1.778" layer="96" rot="R90"/>
+<instance part="GND79" gate="1" x="-91.44" y="73.66" smashed="yes" rot="R90">
+<attribute name="VALUE" x="-88.9" y="71.12" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U8" gate="G$1" x="-15.24" y="-121.92" smashed="yes">
 <attribute name="NAME" x="-39.116" y="-120.65" size="1.778" layer="95"/>
@@ -31241,25 +31229,9 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="11.94" y="-126.3214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="11.64" y="-128.862" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="JP1" gate="-1" x="-254" y="-88.9" smashed="yes">
-<attribute name="NAME" x="-249.682" y="-83.566" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-248.285" y="-88.9" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="U14" gate="A" x="165.1" y="-53.34" smashed="yes">
-<attribute name="NAME" x="163.068" y="-42.18" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="152.4" y="-67.5" size="2.0828" layer="96" ratio="10" rot="SR0"/>
-</instance>
-<instance part="U13" gate="A" x="165.1" y="-22.86" smashed="yes">
-<attribute name="NAME" x="163.068" y="-11.7" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="152.4" y="-37.02" size="2.0828" layer="96" ratio="10" rot="SR0"/>
-</instance>
-<instance part="U12" gate="A" x="165.1" y="7.62" smashed="yes">
-<attribute name="NAME" x="163.068" y="18.78" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="152.4" y="-6.54" size="2.0828" layer="96" ratio="10" rot="SR0"/>
-</instance>
-<instance part="U11" gate="A" x="165.1" y="38.1" smashed="yes">
-<attribute name="NAME" x="163.068" y="49.26" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="152.4" y="23.94" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+<instance part="JP1" gate="-1" x="-246.38" y="-88.9" smashed="yes">
+<attribute name="NAME" x="-242.062" y="-83.566" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-239.395" y="-80.772" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="RN8" gate="A" x="12.7" y="142.24" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="19.812" y="139.192" size="1.778" layer="96" rot="MR0"/>
@@ -31302,8 +31274,32 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="-9.779" y="-108.712" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-10.033" y="-111.506" size="1.778" layer="96"/>
 </instance>
-<instance part="GND82" gate="1" x="-2.54" y="-104.14" smashed="yes" rot="R90">
-<attribute name="VALUE" x="0" y="-106.68" size="1.778" layer="96" rot="R90"/>
+<instance part="GND82" gate="1" x="0" y="-104.14" smashed="yes" rot="R90">
+<attribute name="VALUE" x="2.54" y="-106.68" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="U11" gate="A" x="165.1" y="38.1" smashed="yes">
+<attribute name="NAME" x="161.798" y="52.562" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="149.86" y="49.34" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="U12" gate="A" x="165.1" y="7.62" smashed="yes">
+<attribute name="NAME" x="161.798" y="22.082" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="149.86" y="18.86" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="U13" gate="A" x="165.1" y="-22.86" smashed="yes">
+<attribute name="NAME" x="161.798" y="-8.398" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="149.86" y="-11.62" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="U14" gate="A" x="165.1" y="-53.34" smashed="yes">
+<attribute name="NAME" x="161.798" y="-38.878" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="149.86" y="-42.1" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="C52" gate="G$1" x="213.36" y="-129.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="217.999" y="-122.396" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="218.949" y="-124.886" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="U10" gate="A" x="165.1" y="68.58" smashed="yes">
+<attribute name="NAME" x="162.56" y="83.296" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="150.622" y="80.074" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
 </instances>
 <busses>
@@ -31438,22 +31434,27 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <segment>
 <pinref part="C15" gate="G$1" pin="2"/>
 <pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="-208.28" y1="-142.24" x2="-208.28" y2="-139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C16" gate="G$1" pin="2"/>
 <pinref part="GND19" gate="1" pin="GND"/>
+<wire x1="-167.64" y1="-142.24" x2="-167.64" y2="-139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C17" gate="G$1" pin="2"/>
 <pinref part="GND27" gate="1" pin="GND"/>
+<wire x1="-208.28" y1="-180.34" x2="-208.28" y2="-177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C18" gate="G$1" pin="2"/>
 <pinref part="GND29" gate="1" pin="GND"/>
+<wire x1="-167.64" y1="-180.34" x2="-167.64" y2="-177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND65" gate="1" pin="GND"/>
 <pinref part="C14" gate="G$1" pin="-"/>
+<wire x1="-220.98" y1="-142.24" x2="-220.98" y2="-139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND70" gate="1" pin="GND"/>
@@ -31466,12 +31467,12 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <segment>
 <pinref part="X3" gate="G$1" pin="2"/>
 <pinref part="X3" gate="G$1" pin="3"/>
-<wire x1="-261.62" y1="-96.52" x2="-264.16" y2="-96.52" width="0.1524" layer="91"/>
-<wire x1="-264.16" y1="-93.98" x2="-261.62" y2="-93.98" width="0.1524" layer="91"/>
-<wire x1="-261.62" y1="-93.98" x2="-261.62" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="-254" y1="-96.52" x2="-256.54" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="-256.54" y1="-93.98" x2="-254" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="-254" y1="-93.98" x2="-254" y2="-96.52" width="0.1524" layer="91"/>
 <pinref part="GND72" gate="1" pin="GND"/>
-<wire x1="-261.62" y1="-96.52" x2="-261.62" y2="-99.06" width="0.1524" layer="91"/>
-<junction x="-261.62" y="-96.52"/>
+<wire x1="-254" y1="-96.52" x2="-254" y2="-99.06" width="0.1524" layer="91"/>
+<junction x="-254" y="-96.52"/>
 </segment>
 <segment>
 <pinref part="C12" gate="G$1" pin="2"/>
@@ -31551,7 +31552,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </segment>
 <segment>
 <pinref part="JP3" gate="-1" pin="2"/>
-<wire x1="-109.22" y1="-50.8" x2="-109.22" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="-50.8" x2="-109.22" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="-106.68" y1="-50.8" x2="-109.22" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="GND34" gate="1" pin="GND"/>
 <pinref part="J2" gate="A" pin="2"/>
@@ -31632,10 +31633,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="GND23" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U10" gate="A" pin="/OE"/>
-<pinref part="GND77" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="GND78" gate="1" pin="GND"/>
 <pinref part="U6" gate="G$1" pin="GND"/>
 </segment>
@@ -31665,6 +31662,141 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <segment>
 <pinref part="GND57" gate="1" pin="GND"/>
 <pinref part="VR1" gate="A1" pin="GND"/>
+<wire x1="-187.96" y1="-78.74" x2="-187.96" y2="-76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U11" gate="A" pin="GND"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U14" gate="A" pin="GND"/>
+<pinref part="GND52" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U13" gate="A" pin="GND"/>
+<pinref part="GND51" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U12" gate="A" pin="GND"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C43" gate="G$1" pin="1"/>
+<pinref part="GND61" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C50" gate="G$1" pin="1"/>
+<pinref part="GND68" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C32" gate="G$1" pin="1"/>
+<pinref part="GND38" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C33" gate="G$1" pin="1"/>
+<pinref part="GND37" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C38" gate="G$1" pin="1"/>
+<pinref part="GND82" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C29" gate="G$1" pin="1"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C23" gate="G$1" pin="1"/>
+<pinref part="GND35" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C22" gate="G$1" pin="1"/>
+<pinref part="GND31" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C24" gate="G$1" pin="2"/>
+<pinref part="GND46" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C25" gate="G$1" pin="2"/>
+<pinref part="GND45" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C20" gate="G$1" pin="1"/>
+<pinref part="GND79" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C21" gate="G$1" pin="2"/>
+<pinref part="GND47" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="VR3" gate="G$1" pin="GND"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="VR4" gate="G$1" pin="GND"/>
+<pinref part="GND40" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND73" gate="1" pin="GND"/>
+<pinref part="C19" gate="G$1" pin="-"/>
+<wire x1="-154.93" y1="-180.34" x2="-154.94" y2="-180.34" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="-180.34" x2="-154.94" y2="-177.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C39" gate="G$1" pin="1"/>
+<pinref part="GND36" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C40" gate="G$1" pin="1"/>
+<pinref part="GND54" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C30" gate="G$1" pin="2"/>
+<pinref part="GND42" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C31" gate="G$1" pin="2"/>
+<pinref part="GND41" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="GND96" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="GND28" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="GND91" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="GND92" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C45" gate="G$1" pin="1"/>
+<pinref part="GND53" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND69" gate="1" pin="GND"/>
+<pinref part="U10" gate="A" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND77" gate="1" pin="GND"/>
+<pinref part="U10" gate="A" pin="/OE"/>
 </segment>
 </net>
 <net name="TDI" class="0">
@@ -31825,14 +31957,14 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <junction x="198.12" y="25.4"/>
 <pinref part="P+14" gate="1" pin="+5V"/>
 <junction x="198.12" y="30.48"/>
-<pinref part="U10" gate="A" pin="VCC"/>
 <wire x1="182.88" y1="76.2" x2="198.12" y2="76.2" width="0.1524" layer="91"/>
 <junction x="198.12" y="76.2"/>
 <junction x="198.12" y="-45.72"/>
-<pinref part="U14" gate="A" pin="VCC"/>
-<pinref part="U13" gate="A" pin="VCC"/>
-<pinref part="U12" gate="A" pin="VCC"/>
 <pinref part="U11" gate="A" pin="VCC"/>
+<pinref part="U12" gate="A" pin="VCC"/>
+<pinref part="U13" gate="A" pin="VCC"/>
+<pinref part="U14" gate="A" pin="VCC"/>
+<pinref part="U10" gate="A" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="P+12" gate="1" pin="+5V"/>
@@ -32404,13 +32536,13 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </segment>
 <segment>
 <label x="193.04" y="-53.34" size="1.778" layer="95"/>
-<wire x1="182.88" y1="-22.86" x2="187.96" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="-22.86" x2="187.96" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="-53.34" x2="182.88" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="-53.34" x2="187.96" y2="-53.34" width="0.1524" layer="91"/>
-<junction x="187.96" y="-53.34"/>
-<pinref part="U14" gate="A" pin="Y"/>
+<wire x1="182.88" y1="-22.86" x2="190.5" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="-22.86" x2="190.5" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="-53.34" x2="182.88" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="-53.34" x2="190.5" y2="-53.34" width="0.1524" layer="91"/>
+<junction x="190.5" y="-53.34"/>
 <pinref part="U13" gate="A" pin="Y"/>
+<pinref part="U14" gate="A" pin="Y"/>
 </segment>
 </net>
 <net name="D1" class="0">
@@ -32899,7 +33031,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <net name="N$77" class="0">
 <segment>
 <pinref part="X3" gate="G$1" pin="1"/>
-<wire x1="-254" y1="-91.44" x2="-264.16" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="-246.38" y1="-91.44" x2="-256.54" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="-1" pin="1"/>
 </segment>
 </net>
@@ -33010,23 +33142,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <junction x="200.66" y="-129.54"/>
 </segment>
 </net>
-<net name="N$45" class="0">
-<segment>
-<pinref part="U15" gate="B" pin="-IN"/>
-<wire x1="177.8" y1="-132.08" x2="180.34" y2="-132.08" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="-144.78" x2="177.8" y2="-144.78" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="-144.78" x2="175.26" y2="-144.78" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="-132.08" x2="177.8" y2="-144.78" width="0.1524" layer="91"/>
-<junction x="177.8" y="-144.78"/>
-<pinref part="R41" gate="G$1" pin="2"/>
-<pinref part="R42" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$51" class="0">
-<segment>
-<junction x="177.8" y="-144.78"/>
-</segment>
-</net>
 <net name="RCH" class="0">
 <segment>
 <wire x1="233.68" y1="-91.44" x2="220.98" y2="-91.44" width="0.1524" layer="91"/>
@@ -33037,9 +33152,9 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <net name="LCH" class="0">
 <segment>
 <wire x1="226.06" y1="-129.54" x2="220.98" y2="-129.54" width="0.1524" layer="91"/>
-<pinref part="C52" gate="G$1" pin="-"/>
-<wire x1="233.68" y1="-129.54" x2="220.98" y2="-129.54" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-129.54" x2="226.06" y2="-129.54" width="0.1524" layer="91"/>
 <label x="223.52" y="-129.54" size="1.778" layer="95"/>
+<pinref part="C52" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="VPPL3" class="0">
@@ -33067,12 +33182,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <segment>
 <pinref part="R35" gate="G$1" pin="2"/>
 <pinref part="C51" gate="G$1" pin="+"/>
-</segment>
-</net>
-<net name="N$48" class="0">
-<segment>
-<pinref part="C52" gate="G$1" pin="+"/>
-<pinref part="R38" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$63" class="0">
@@ -33869,7 +33978,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <net name="N$15" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="-251.46" y1="-91.44" x2="-236.22" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="-243.84" y1="-91.44" x2="-236.22" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="-1" pin="2"/>
 </segment>
 </net>
@@ -33946,16 +34055,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="-284.48" y1="-25.4" x2="-284.48" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="CN1" gate="G$1" pin="PA12"/>
 <wire x1="-284.48" y1="-20.32" x2="-312.42" y2="-20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<wire x1="-15.24" y1="134.62" x2="-15.24" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="96.52" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="96.52" x2="40.64" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="134.62" x2="5.08" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="134.62" x2="-15.24" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="134.62" x2="2.54" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -34242,6 +34341,24 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="U3" gate="G$1" pin="EN"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="-205.74" y1="60.96" x2="-231.14" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="C52" gate="G$1" pin="+"/>
+<pinref part="R38" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U15" gate="B" pin="-IN"/>
+<wire x1="177.8" y1="-132.08" x2="180.34" y2="-132.08" width="0.1524" layer="91"/>
+<pinref part="R42" gate="G$1" pin="1"/>
+<pinref part="R41" gate="G$1" pin="2"/>
+<wire x1="182.88" y1="-144.78" x2="177.8" y2="-144.78" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="-144.78" x2="175.26" y2="-144.78" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="-132.08" x2="177.8" y2="-144.78" width="0.1524" layer="91"/>
+<junction x="177.8" y="-144.78"/>
 </segment>
 </net>
 </nets>
